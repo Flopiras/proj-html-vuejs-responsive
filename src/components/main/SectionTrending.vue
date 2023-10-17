@@ -20,12 +20,12 @@ export default {
             <!-- section main -->
             <div class="section-main">
                 <div class="row">
-                    <div class="col-2"></div>
-                    <div class="col-8">
+                    <div class="col-sm-12 col-lg-2"></div>
+                    <div class="col-sm-12 col-lg-8">
                         <div class="container-fluid">
                             <!-- cards -->
-                            <div class="row row-cols-4">
-                                <div v-for="trend in trends" :key="trend.id" class="col">
+                            <div class="row">
+                                <div v-for="trend in trends" :key="trend.id" class="col-sm-12 col-md-6 col-lg-3">
                                     <div class="trend">
 
                                         <ShopCard :item="trend" />
@@ -34,7 +34,7 @@ export default {
                             </div>
                         </div>
                     </div>
-                    <div class="col-2"></div>
+                    <div class="col-sm-12 col-lg-2"></div>
                 </div>
             </div>
         </div>

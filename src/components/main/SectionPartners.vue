@@ -10,17 +10,17 @@ export default {
     <section>
         <div class="container">
             <div class="row">
-                <div class="col-2"></div>
-                <div class="col-8">
+                <div class="col-sm-12 col-lg-2"></div>
+                <div class="col-sm-12 col-lg-8">
                     <div class="grid container-fluid">
-                        <div class="row row-cols-5">
+                        <div class="row row-cols-1 row-cols-md-2 row-cols-lg-5">
                             <div v-for="partner in partners" :key="partner.id" class="col">
                                 <BaseCard :pic="partner.pic" />
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="col-2"></div>
+                <div class="col-sm-12 col-lg-2"></div>
             </div>
         </div>
     </section>

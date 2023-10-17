@@ -16,7 +16,7 @@ export default {
             <h1 class="text-uppercase">gogrin all <span class="second-color">organic</span> food</h1>
 
             <!-- buttons -->
-            <ul class="d-flex justify-content-center">
+            <ul class="d-flex flex-wrap justify-content-center">
                 <li><button class="btn btn-link">All Product</button></li>
                 <li><button class="btn btn-link">Apple</button></li>
                 <li><button class="btn btn-link">Food</button></li>
@@ -26,15 +26,17 @@ export default {
 
             <!-- foods grid -->
             <div class="grid">
-                <div class="row row-cols-4">
-                    <div v-for="food in foods" :key="food.id" class="col">
+                <div class="row">
+                    <div v-for="food in foods" :key="food.id" class="col-sm-12 scol-md-6 col-lg-2">
                         <ShopCard :item="food" />
                     </div>
                 </div>
             </div>
 
             <!-- button -->
-            <BaseButton :placeholder="'all products'" :bgClass="'btn-second'" />
+            <div class="d-flex justify-content-center align-items-center">
+                <BaseButton :placeholder="'all products'" :bgClass="'btn-second'" />
+            </div>
         </div>
     </section>
 </template>
