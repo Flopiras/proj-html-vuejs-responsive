@@ -11,30 +11,40 @@ export default {
 
 <template>
     <div id="header-main">
-        <div class="container my-2 d-flex justify-content-between align-items-center">
-            <!-- left part -->
-            <div class="d-flex align-items-center">
-                <img src="../../assets/img/logo.png" alt="logo">
+        <!-- navbar -->
+        <nav class="navbar navbar-expand-lg m-2">
+            <div class="container-fluid">
 
-                <BaseDropdown v-for="option in options" :key="option" :placeholder="option" />
-            </div>
+                <!-- left part -->
+                <a class="navbar-brand" href="#"><img src="../../assets/img/logo.png" alt="logo"></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-between" id="navbarSupportedContent">
+                    <div class="d-lg-flex align-items-center flex-wrap">
+                        <BaseDropdown v-for="option in options" :key="option" :placeholder="option" />
+                    </div>
 
-            <!-- right part -->
-            <div class="d-flex align-items-center">
-                <!-- search -->
-                <div class="search round">
-                    <FontAwesomeIcon icon="fa-magnifying-glass" class="me-1" />
+                    <!-- right part -->
+                    <div class="d-flex justify-content-center align-items-center">
+                        <!-- search -->
+                        <div class="search round">
+                            <FontAwesomeIcon icon="fa-magnifying-glass" class="me-1" />
+                        </div>
+                        <!-- cart -->
+                        <div id="cart">
+                            <FontAwesomeIcon icon="fa-cart-shopping" class="me-1 fs-3" />
+                            <div class="items-number round">0</div>
+                        </div>
+
+                        <!-- button -->
+                        <BaseButton :border="'border-leaf'" :bgClass="'btn-second'" :placeholder="'ORDER NOW'" />
+                    </div>
                 </div>
-                <!-- cart -->
-                <div id="cart">
-                    <FontAwesomeIcon icon="fa-cart-shopping" class="me-1 fs-3" />
-                    <div class="items-number round">0</div>
-                </div>
-
-                <!-- button -->
-                <BaseButton :border="'border-leaf'" :bgClass="'btn-second'" :placeholder="'ORDER NOW'" />
             </div>
-        </div>
+        </nav>
         <!-- jumbotron -->
         <HeaderJumbotron />
     </div>
