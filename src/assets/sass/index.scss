@@ -1,0 +1,17 @@
+@use './vars' as *;
+
+body{
+    font-family: sans-serif
+}
+
+ul{
+    list-style-type: none;
+}
+
+.main-color{
+    color: $main-color;
+}
+
+.second-color{
+    color: $second-main-color;
+}
