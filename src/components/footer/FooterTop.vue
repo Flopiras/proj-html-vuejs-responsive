@@ -15,16 +15,16 @@ export default {
             <BaseFormSubscribe />
             <!-- links -->
             <div class="row links">
-                <div class="col-2"></div>
+                <div class="col-sm-12 col-lg-2"></div>
                 <!-- logo and socials -->
-                <div class="col">
+                <div class="col-sm-12 col-md-2">
                     <!-- logo -->
                     <BaseCard :pic="'footer-logo.png'" :name="'logo'" />
 
                     <p>War should never be entered upon until every agency of piece has failed not be good</p>
 
                     <!-- links -->
-                    <ul class="d-flex">
+                    <ul class="d-flex flex-wrap">
                         <li>
                             <div class="icon">
                                 <FontAwesomeIcon icon="fa-brands fa-facebook-f" />
@@ -48,14 +48,14 @@ export default {
                     </ul>
                 </div>
                 <!-- emergency links -->
-                <div class="col">
+                <div class="col-sm-12 col-lg-2">
                     <h5 class="fw-bold">Emergency link</h5>
                     <ul>
                         <li v-for="link in emergencyLinks" :key="link" class="py-2">{{ link }}</li>
                     </ul>
                 </div>
                 <!-- blog -->
-                <div class="col ">
+                <div class="col-sm-12 col-lg-2 ">
                     <h5 class="fw-bold">Our Latest Blog</h5>
 
                     <ul class="blog">
@@ -77,7 +77,7 @@ export default {
 
                 </div>
                 <!-- gallery -->
-                <div class="col">
+                <div class="col-sm-12 col-lg-2">
                     <h5 class="fw-bold">Our Gallery</h5>
 
                     <div class="container-fluid">
@@ -89,7 +89,7 @@ export default {
                     </div>
 
                 </div>
-                <div class="col-2"></div>
+                <div class="col-sm-12 col-lg-2"></div>
             </div>
         </div>
     </section>
@@ -124,6 +124,7 @@ section {
 .icon {
     cursor: pointer;
     margin-right: 1rem;
+    margin-bottom: 1rem;
     display: flex;
     justify-content: center;
     align-items: center;
