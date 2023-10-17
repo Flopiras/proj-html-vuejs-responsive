@@ -12,15 +12,15 @@ export default {
     <section id="mission">
         <div class="container">
             <div class="row">
-                <div class="col-2"></div>
+                <div class="col-lg-2"></div>
                 <!-- we can -->
-                <div class="col-4 ">
+                <div class="col-sm-sm-12 col-md-4">
                     <h2 class="main-color fw-bold">
                         <span class="second-color">Look what</span> consumer power has done with <span
                             class="second-color">organic food;</span> we can do the same with clothes.
                     </h2>
                 </div>
-                <div class="col-4">
+                <div class="col-sm-12 col-md-4">
                     <p>
                         I have a need to make sorts of connections literal sometimes, and a vehicle often to do that.
                         I have a relationship to hosting culture. <span class="second-color">Ii isn't really about it helps
@@ -31,16 +31,16 @@ export default {
                         I have a relationship to hosting culture.
                     </p>
                 </div>
-                <div class="col-2">
+                <div class="col-sm-12 col-md-2">
                     <img src="../../assets/img/fe-shap1-1.png" alt="All Natural">
                 </div>
             </div>
             <div class="row my-4">
-                <div class="col-2"></div>
-                <div v-for="product in products" :key="product.id" class="col-2">
+                <div class="col-sm-12 col-lg-2"></div>
+                <div v-for="product in products" :key="product.id" class="col-sm-12 col-md-6 col-lg-2">
                     <BaseCard :pic="product.pic" :picName="product.name" />
                 </div>
-                <div class="col-2">
+                <div class="col-sm-12 col-md-6 col-lg-2">
                     <BaseCard :pic="products[0].pic" />
                 </div>
             </div>

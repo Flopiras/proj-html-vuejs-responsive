@@ -7,7 +7,7 @@ export default {
 
 <template>
     <div id="base-form">
-        <div class="container d-flex justify-content-between align-items-center">
+        <div class="container d-flex flex-wrap justify-content-between align-items-center">
             <h3 class="fw-bold text-uppercase">subscribe our newsletter</h3>
             <!-- input  -->
             <div class="input-group w-50 mb-3">

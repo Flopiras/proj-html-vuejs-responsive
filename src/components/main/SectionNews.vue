@@ -17,16 +17,16 @@ export default {
             <!--grid  -->
             <div class="grid container-fluid">
                 <div class="row">
-                    <div class="col-2"></div>
-                    <div class="col-8">
+                    <div class="col-sm-12 col-lg-2"></div>
+                    <div class="col-sm-12 col-lg-8">
                         <!-- news cards -->
                         <div class="news-cards row">
-                            <div v-for="item in news" :key="item.id" class="col">
+                            <div v-for="item in news" :key="item.id" class="col-sm-12 col-lg-4">
                                 <NewsCard :item="item" />
                             </div>
                         </div>
                     </div>
-                    <div class="col-2"></div>
+                    <div class="col-sm-12 col-lg-2"></div>
                 </div>
             </div>
         </div>

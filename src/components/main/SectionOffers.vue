@@ -10,14 +10,14 @@ export default {
     <section>
         <div class="container">
             <div class="row">
-                <div class="col-2"></div>
-                <div class="left-offer col-4">
+                <div class="col-sm-12 col-lg-2"></div>
+                <div class="left-offer my-2 col-sm-12 col-md-6 col-lg-4">
                     <OfferCard :text="'Fresh gurden tomato combo offer... $37'" />
                 </div>
-                <div class="right-offer col-4">
+                <div class="right-offer my-2 col-sm-12 col-md-6 col-lg-4">
                     <OfferCard :text="'Some organic healty fruits combo offer... $49'" />
                 </div>
-                <div class="col-2"></div>
+                <div class="col-sm-12 col-lg-2"></div>
             </div>
         </div>
     </section>
@@ -29,12 +29,14 @@ section {
 }
 
 .left-offer {
-    margin-right: 1rem;
+    margin-right: 0.5rem;
+    margin-left: 0.5rem;
     background-image: url(../../assets/img/offer-img01.jpg);
 }
 
 .right-offer {
-    margin-left: 1rem;
+    margin-right: 0.5rem;
+    margin-left: 0.5rem;
     background-image: url(../../assets/img/offer-img02.jpg);
 }
 
