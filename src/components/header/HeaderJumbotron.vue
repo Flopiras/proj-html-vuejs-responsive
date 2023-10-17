@@ -10,7 +10,7 @@ export default {
     <div id="jumbotron">
         <div class="container">
 
-            <div class="jumbo-content text-center">
+            <div class="jumbo-content text-center py-4">
                 <h5>GOGRIN ORGANIC FOOD STORE</h5>
                 <h1>Eating naturally & orgainc is always be healty.</h1>
 
@@ -25,7 +25,7 @@ export default {
 <style lang="scss" scoped>
 #jumbotron {
     background-image: url(../../assets/img/slider.jpg);
-    height: 850px;
+    min-height: 850px;
     display: flex;
     justify-content: center;
     align-items: center;
